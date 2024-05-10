@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script language='Javascript'>
+			
+			function iniciajogo(){
+				var dificuldade= document.getElementById('dificuldade').value;
+
+				
+				window.location.href = 'jogo.html?'+dificuldade;
+
+
+			}
+
+		</script>
+
+
+
+	</head>
+
+	<body class="bg-green-300">
+
+	<div class="h-screen py-36 ">
+		<div class="w-1/3 m-auto  py-14 bg-white rounded-xl border">
+
+
+
+			<h3 class="text-2xl  w-1/3 mx-auto border border-gray-400 rounded-md"> <b>Nivel:</b>
+				<select id="dificuldade" >
+					<option value="1">Facil</option>
+					<option value="2">Normal</option>
+					<option value="3">Difícil</option>
+				</select>
+			</h3>
+
+
+			<br>
+
+			<img class="mx-auto" src="imagens/iniciar.png" alt="iniciar" onclick="iniciajogo()">
+		
+		</div>
+
+
+	</div>
+
+	</body>
+	
+</html>
